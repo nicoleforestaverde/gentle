@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gentle — Support</title>
+<title>Gentle Support</title>
 <style>
   :root { color-scheme: light dark; }
   body { margin: 0; padding: 2rem 1.25rem 4rem; font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>Gentle Support</h1>
-  <p class="muted">Soft reminders, zero pressure.</p>
+  <p class="muted">Reminders for the things you would like to get around to.</p>
 
   <div class="card">
     Need help? Email <a href="mailto:info@softailed.com">info@softailed.com</a>.
@@ -39,75 +39,94 @@
   <details>
     <summary>How do nudges work?</summary>
     <p>Add a nudge with the + button, pick roughly when it should come back (today,
-    tomorrow, the weekend, someday) and which part of the day feels right, from
-    morning to night, all day, or a specific time. Gentle schedules a soft
-    notification at a calm moment inside that window. Nothing expires and nothing
-    turns red. A nudge simply waits until you get to it.</p>
+    tomorrow, the weekend, someday) and which part of the day suits it, from morning
+    to night, all day, or a specific time. Gentle picks a moment inside that window
+    and sends a notification. Miss it and the nudge moves to the next part of the day
+    and tries again, until you mark it done or move it.</p>
+    <p>Two kinds do not wander. An All day nudge sits in Notification Center and
+    renews at midnight. A specific-time nudge arrives at its time and only comes back
+    if you gave it a repeat.</p>
   </details>
 
   <details>
     <summary>I am not receiving notifications.</summary>
-    <p>First, know that quiet is by design: nudges arrive silently in your
-    notification bar and on the lock screen, with a badge but no sound or
-    vibration, so nothing interrupts you. Long-press a nudge notification for
-    the "Yes, I did" and "Later" buttons. Only nudges set for a specific time
-    ring. If nothing shows up at all, check that notifications are allowed for
-    Gentle in your device settings (Settings, then Notifications, then Gentle on
-    iOS; Settings, then Apps, then Gentle, then Notifications on Android).
-    Gentle uses only local notifications, so no internet connection is needed
-    for them to arrive.</p>
+    <p>Most nudges are silent by default: Notification Center and the lock screen, badge,
+    no sound. Specific-time nudges are the exception, and they can come through Focus. Any
+    other nudge stays silent unless you switch Sound on for it.</p>
+    <p>Tap a notification and Gentle opens on that nudge, with its card already open.</p>
+    <p>If nothing arrives at all, check that notifications are allowed for Gentle in
+    Settings, then Notifications, then Gentle. Gentle uses local notifications, so no
+    connection is needed.</p>
+    <p>If they arrive but at odd times, check the online hours in Preferences. Gentle
+    only lands part-of-day nudges inside that window, so a narrow one pushes them to
+    its edge. Specific-time and All day nudges keep their own timing regardless.</p>
+  </details>
+
+  <details>
+    <summary>What does Someday do?</summary>
+    <p>Someday is a shelf with no day attached. A nudge left there speaks once, 14 days
+    later, at its own part of the day. It never repeats and never wanders. Open its card
+    any time to give it a real day, and re-shelving starts the 14 days over.</p>
   </details>
 
   <details>
     <summary>What is the free limit?</summary>
-    <p>The free version holds up to 3 nudges per calendar day. Gentle Plus unlocks
-    unlimited nudges, every color palette, and repeating nudges.</p>
+    <p>3 active nudges in total, not per day. Someday and anything shared in from another
+    app count too; the two examples Gentle starts you with do not. Completing or deleting
+    one frees a slot.</p>
+    <p>At the limit, sharing into Gentle stops as well: you get the paywall, and closing
+    it without subscribing means the shared text is not kept. Gentle Plus removes the
+    limit and unlocks all 19 palettes and repeating nudges.</p>
   </details>
 
   <details>
     <summary>How do I move my data to a new device?</summary>
-    <p>Use the export option in Gentle to save a backup file of your reminders, then
-    open that file with Gentle on your new device to import it. Your data moves with
-    the file. It is never uploaded to a server. Gentle will always ask you to confirm
-    before an import replaces anything already on the new device, so there is no risk
-    of losing data by accident.</p>
+    <p>In Preferences, under Your data, tap <strong>Back up</strong>. The file holds your
+    nudges, your Done list and your settings.</p>
+    <p>Save it somewhere the new device can reach, such as Files or iCloud Drive, then
+    open Preferences there and tap <strong>Restore</strong>. Gentle cannot be opened
+    straight from a shared file, so it has to be saved first. You will be asked to confirm
+    before a restore replaces anything.</p>
   </details>
 
   <details>
     <summary>How do I cancel my Gentle Plus subscription?</summary>
-    <p>Subscriptions are managed by your app store, not inside the app. On iOS, open
-    Settings, tap your name, tap Subscriptions, select Gentle Plus, then Cancel.
-    Deleting the app does not cancel a subscription.</p>
+    <p>Preferences, then Manage subscription, which opens Apple's subscription screen.
+    You can also get there through Settings, your name, Subscriptions. Deleting the app
+    does not cancel it.</p>
   </details>
 
   <details>
     <summary>I reinstalled or changed device. Where is my subscription?</summary>
-    <p>Open the paywall and tap Restore Purchases. As long as you are signed in with
-    the same app store account you bought it with, your Gentle Plus access is
-    restored. The subscription is tied to your store account, not to the device or
-    the app data.</p>
+    <p>Open the paywall and tap Restore purchases. Gentle Plus is tied to your App Store
+    account, not to the device or the app data, so signing in with the same account gets
+    it back.</p>
   </details>
 
   <details>
     <summary>Where is my data stored? Can you recover it?</summary>
-    <p>Everything lives on your device only. Gentle has no server and no account. That
-    also means we cannot recover reminders after the app is deleted or the device is
-    reset, unless you saved an export file. If you back up your device, Gentle data is
-    included in that backup.</p>
+    <p>Your nudges live on your device, plus wherever you choose to keep a backup file.
+    Gentle has no account and no server of ours, and your nudges are never sent anywhere.
+    Each time you open Gentle it asks RevenueCat, the service that tracks subscriptions,
+    whether Gentle Plus is active on your store account. That check carries an anonymous ID
+    and your store receipt, and nothing else. If you subscribe, the payment itself goes
+    through Apple. The <a href="../privacy/">Privacy Policy</a> has the details.</p>
+    <p>Because we hold nothing, we cannot recover anything after the app is deleted or the
+    device is reset, unless you saved a backup. A full device backup includes Gentle.</p>
   </details>
 
   <details>
     <summary>How do I delete all my data?</summary>
-    <p>Delete the app. Because nothing is stored anywhere else, that removes everything
-    permanently. If you would like to keep a copy first, use the export option to save
-    a backup file before you do.</p>
+    <p>Delete the app. That removes everything Gentle stored on the device, though a
+    backup file you saved earlier stays wherever you put it, and a Gentle Plus
+    subscription still needs cancelling separately.</p>
   </details>
 
   <details>
-    <summary>Which languages and palettes are available?</summary>
-    <p>Gentle speaks English, German, French, Spanish, Portuguese, Korean, and Japanese,
-    and comes with 29 color palettes across light, dark, and dark vibrant, plus matching
-    app icons. It is the same calm design throughout; the palettes change the colors.</p>
+    <summary>Which languages are available?</summary>
+    <p>English, German, French, Spanish, Portuguese, Korean and Japanese. Gentle follows
+    your device language when it is one of these, and you can also choose one in
+    Preferences.</p>
   </details>
 
   <nav>
